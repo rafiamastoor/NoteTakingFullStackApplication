@@ -6,8 +6,13 @@ const port = 3000;
 const app = express();
 
 app.use(express.json());
+//app.use(express.static('public'));
 app.use(express.static(path.join(__dirname,'public')));
 const notesFile = path.join(__dirname,'notes.json');
+
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/index.html');
+});
 
 /*GET method to display saved notes on application loading*/
 app.get('/notes',(request,response) => {
