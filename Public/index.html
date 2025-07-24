@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Taking App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>
+            Note Taking Full Stack Application
+        </h1>
+    </header>
+    <section class="note-input-section">
+        <textarea id="noteText" maxlength="200" placeholder="Type your note here..."></textarea>
+        <!--When create and save button will be clicked, createNote() function will be called-->
+        <button onclick="createNote()">Create & Save</button>
+    </section>
+    <!--creating a flex grid where different notes will be displayed. All notes will be added as child to this dic element-->
+    <div class="note-grid" id="noteGrid"></div>
+    <script src="script.js"></script>
+</body>
+</html>
