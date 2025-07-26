@@ -20,5 +20,6 @@
   "bugs": {
     "url": "https://github.com/rafiamastoor/NoteTakingFullStackApplication/issues"
   },
-  "homepage": "https://github.com/rafiamastoor/NoteTakingFullStackApplication#readme"
+  "homepage": "https://github.com/rafiamastoor/NoteTakingFullStackApplication#readme",
+  "devDependencies": {}
 }
