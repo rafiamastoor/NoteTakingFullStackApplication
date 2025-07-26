@@ -9,9 +9,9 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname,'public')));
 const notesFile = path.join(__dirname,'notes.json');
 
-/*app.get('/', (req, res) => {
+app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
-});*/
+});
 
 /*GET method to display saved notes on application loading*/
 app.get('/notes',(request,response) => {
